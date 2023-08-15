@@ -1,0 +1,115 @@
+.main-container {
+    background: #282c34;
+
+}
+
+.my-avatar {
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+
+}
+
+.avatar-border {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 20px;
+    width: 21rem;
+    height: 21rem;
+    animation-name: avatar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes avatar {
+    0% {
+        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(111,111,181,1) 50%, rgba(0,212,255,1) 100%);;
+        transform: rotate(0deg);
+    }
+    25% {
+        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(111,111,181,1) 50%, rgba(0,212,255,1) 100%);;
+        transform: rotate(15deg);
+    }
+    50% {
+        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(111,111,181,1) 50%, rgba(0,212,255,1) 100%);;
+        transform: rotate(0deg);
+    }
+    75% {
+        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(111,111,181,1) 50%, rgba(0,212,255,1) 100%);;
+        transform: rotate(-15deg);
+
+    }
+    100% {
+        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(111,111,181,1) 50%, rgba(0,212,255,1) 100%);;
+        transform: rotate(0deg);
+
+    }
+}
+
+.my-avatar img {
+    position: relative;
+    right: 25%;
+    bottom: 50%;
+}
+
+@media only screen and (min-width: 375px) {
+    .intro {
+        font-size: 24px;
+        color: white;
+        display: grid;
+        justify-content: center;
+        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(111,111,181,1) 50%, rgba(0,212,255,1) 100%);
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .hobby {
+        color: white;
+        display: grid;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .photo-showcase {
+        display: grid;
+        justify-items: center;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        color: white;
+        height: 30rem;
+        width: 100%;
+        background: linear-gradient(to bottom,rgba(0, 0, 0, 0.5), rgba(117, 19, 93, 0.73)), url("../asset/DSC04994.JPG");
+        background-size: cover;
+        background-attachment: fixed;
+        flex-wrap: wrap;
+        padding-bottom: 5rem;
+    }
+
+    .hobby {
+        color: white;
+        display: grid;
+        justify-items: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .photo-showcase {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+}
+
+

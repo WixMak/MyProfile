@@ -1,0 +1,30 @@
+.navbar-container {
+    background-color: #282c34;
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container .logo a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+.navbar-container .navbar-btn {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar-container .navbar-btn a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar-container .navbar-btn a:hover {
+    color: #6f6fb5;
+    border-bottom: 2px solid #6f6fb5;
+}
