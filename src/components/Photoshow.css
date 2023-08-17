@@ -1,0 +1,42 @@
+@media only screen and (min-width: 375px) {
+
+    .hobby {
+        color: white;
+        display: grid;
+        justify-items: center;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .hobby h1{
+        font-size: 36px;
+        margin-bottom: 2rem;
+        color: #00d4ff;
+
+    }
+
+    .photo-showcase {
+        display: grid;
+        justify-items: center;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+
+
+    .hobby {
+        color: white;
+        display: grid;
+        justify-items: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .photo-showcase {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+}

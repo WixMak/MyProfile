@@ -1,0 +1,81 @@
+.project-showcase-img {
+    max-width: 50%;
+}
+
+
+.project-showcase-desc p{
+    color: white;
+}
+
+.btn-group {
+    display: flex;
+}
+
+.btn-group img{
+    margin-inline: 5px;
+}
+
+.live-btn{
+    display: flex;
+    align-items: center;
+    background-color: #00d4ff;
+    color: white;
+    border-radius: 10px;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+
+.live-btn:hover{
+    background-color: #6f6fb5;
+
+}
+
+.live-btn h2{
+    margin: 0;
+}
+
+.project-showcase-right {
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    background-color: #444273;
+    padding-block: 2.5rem;
+    padding-inline: 5rem;
+}
+
+.project-showcase-left {
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding-block: 2.5rem;
+    padding-inline: 5rem;
+}
+
+.project-showcase-left .project-showcase-desc{
+    padding-left: 20px;
+}
+.project-showcase-right .project-showcase-desc{
+    padding-right: 20px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .project-showcase-right,
+    .project-showcase-left {
+        flex-wrap: wrap;
+    }
+
+    .project-showcase-img{
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .project-showcase-desc{
+        padding-left: 0;
+    }
+}
+

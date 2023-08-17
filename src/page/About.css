@@ -1,0 +1,19 @@
+
+.about-intro {
+    background-color: #444273;
+    padding: 5rem;
+}
+
+.about-intro h1 {
+    color: #00d4ff;
+    font-size: 36px;
+}
+
+.about-intro h3 {
+    color: darkgoldenrod;
+}
+
+.about-intro p {
+    color: white;
+    font-size: 24px;
+}
