@@ -6,8 +6,7 @@ import Navbar from "./components/Navbar";
 import Main from "./page/main";
 import Experience from "./page/Experience";
 import Services from "./page/Services";
-import Contact from "./page/Contact";
-
+import About from "./page/About";
 
 function App() {
     document.body.style.background = '#282c34'
@@ -19,7 +18,7 @@ function App() {
                 <Route path="/" element={<Main />} />
                 <Route path="/exp" element={<Experience />} />
                 <Route path="/services" element={<Services />} />
-                <Route path="/contact" element={<Contact />} />
+                <Route path="/about" element={<About />} />
                 <Route path="*" element={<Main />} />
             </Routes>
       </Router>

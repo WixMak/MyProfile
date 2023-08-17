@@ -1,6 +1,4 @@
 .main-container {
-    background: #282c34;
-
 }
 
 .my-avatar {
@@ -24,30 +22,42 @@
     animation-iteration-count: infinite;
 }
 
-@keyframes avatar {
-    0% {
-        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(111,111,181,1) 50%, rgba(0,212,255,1) 100%);;
-        transform: rotate(0deg);
-    }
-    25% {
-        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(111,111,181,1) 50%, rgba(0,212,255,1) 100%);;
-        transform: rotate(15deg);
-    }
-    50% {
-        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(111,111,181,1) 50%, rgba(0,212,255,1) 100%);;
-        transform: rotate(0deg);
-    }
-    75% {
-        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(111,111,181,1) 50%, rgba(0,212,255,1) 100%);;
-        transform: rotate(-15deg);
-
-    }
-    100% {
-        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(111,111,181,1) 50%, rgba(0,212,255,1) 100%);;
-        transform: rotate(0deg);
-
-    }
+.intro h1 {
+    margin: 0;
+    color: #6f6fb5;
 }
+.intro h3 {
+    margin: 0;
+    color: #00d4ff;
+}
+.intro p {
+     font-family: "YuKyokasho Yoko";
+}
+
+/*@keyframes avatar {*/
+/*    0% {*/
+/*        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(111,111,181,1) 50%, rgba(0,212,255,1) 100%);;*/
+/*        transform: rotate(0deg);*/
+/*    }*/
+/*    25% {*/
+/*        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(111,111,181,1) 50%, rgba(0,212,255,1) 100%);;*/
+/*        transform: rotate(15deg);*/
+/*    }*/
+/*    50% {*/
+/*        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(111,111,181,1) 50%, rgba(0,212,255,1) 100%);;*/
+/*        transform: rotate(0deg);*/
+/*    }*/
+/*    75% {*/
+/*        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(111,111,181,1) 50%, rgba(0,212,255,1) 100%);;*/
+/*        transform: rotate(-15deg);*/
+
+/*    }*/
+/*    100% {*/
+/*        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(111,111,181,1) 50%, rgba(0,212,255,1) 100%);;*/
+/*        transform: rotate(0deg);*/
+
+/*    }*/
+/*}*/
 
 .my-avatar img {
     position: relative;
@@ -55,28 +65,19 @@
     bottom: 50%;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 576px) {
     .intro {
         font-size: 24px;
         color: white;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(111,111,181,1) 50%, rgba(0,212,255,1) 100%);
         padding-bottom: 20px;
         text-align: center;
     }
 
-    .hobby {
-        color: white;
-        display: grid;
-        justify-items: center;
-        text-align: center;
-    }
-
-    .photo-showcase {
-        display: grid;
-        justify-items: center;
-    }
 }
 
 @media only screen and (min-width: 576px) {
@@ -84,32 +85,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 32px;
+        text-align: left;
+        font-size: 36px;
         color: white;
-        height: 30rem;
+        min-height: 30rem;
         width: 100%;
-        background: linear-gradient(to bottom,rgba(0, 0, 0, 0.5), rgba(117, 19, 93, 0.73)), url("../asset/DSC04994.JPG");
+        background: linear-gradient(to bottom,rgba(0, 0, 0, 0.5), rgba(117, 19, 93, 0.73)), url("../asset/myphoto/DSC04994.JPG");
         background-size: cover;
         background-attachment: fixed;
         flex-wrap: wrap;
-        padding-bottom: 5rem;
-    }
-
-    .hobby {
-        color: white;
-        display: grid;
-        justify-items: center;
     }
 }
-
-@media only screen and (min-width: 768px) {
-
-    .photo-showcase {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-}
-
 

@@ -28,13 +28,13 @@ const Navbar = () => {
     return (
         <div className="navbar-container">
             <div className="logo">
-                <NavLink to="/">Wix.Dev</NavLink>
+                <NavLink to="/"><strong>Wix.Dev</strong></NavLink>
             </div>
             {showButton ?
                 <div className="navbar-btn">
+                    <NavLink to="/About">About me</NavLink>
                     <NavLink to="/exp">Projects</NavLink>
                     <NavLink to="/services">Services</NavLink>
-                    <NavLink to="/contact">Contact</NavLink>
                 </div> :
                     <Morebtn style={{stroke:'white', width:'40px'}} onClick={() => console.log('clicked')}/>
             }
