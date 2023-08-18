@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react';
 
 import Css from '../asset/tech_icon/css3.svg';
 import Html from '../asset/tech_icon/html5.svg';
@@ -13,17 +13,15 @@ import Github from '../asset/tech_icon/github.svg';
 import Ps from '../asset/tech_icon/Group 67.svg';
 import Redux from '../asset/tech_icon/redux.svg';
 import sql from '../asset/tech_icon/sql.svg';
-import MongoDB from '../asset/tech_icon/mongoDB.svg'
-import PostMan from '../asset/tech_icon/Postman.svg'
-import './Techstack.css'
+import MongoDB from '../asset/tech_icon/mongoDB.svg';
+import PostMan from '../asset/tech_icon/Postman.svg';
+import './Techstack.css';
 const stackList = [
     Html, Css, ReactIcon, Redux, Node, sql, MongoDB, Js, Python, Docker, Figma, Gitlab, Github, PostMan, Ps
 ]
 
 
 const Techstack = () => {
-    const [skills, setSkills] = useState('front');
-
     return (
         <div className="techstack-container">
             <h1>WHAT SKILL DO I HAVE ?</h1>

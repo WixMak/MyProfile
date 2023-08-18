@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import Rightarrow from "../asset/rightarrow.svg";
 import CodeIcon from "../asset/code-circle.svg";
@@ -32,7 +32,7 @@ const Projectshow = props => {
                         }
                     </div>
                 </div>
-                <img src={props.src} className="project-showcase-img"/>
+                <img src={props.src} className="project-showcase-img" alt={props.name}/>
             </div>
         </div>
 

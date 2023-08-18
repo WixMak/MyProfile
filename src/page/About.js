@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 import Photoshow from "../components/Photoshow";
 
-import "./About.css"
+import "./About.css";
 const About = () => {
     return (
         <div>
