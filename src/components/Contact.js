@@ -5,7 +5,7 @@ import LinkedinIcon from '../asset/icons8-linkedin.svg';
 import Ig from '../asset/icons8-instagram.svg';
 import Github from '../asset/icons8-github.svg';
 
-import "./Contact.css";
+// import "./Contact.css";
 const Contact = () => {
     return (
         <div className="contact-container">

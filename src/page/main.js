@@ -2,7 +2,7 @@ import React from "react";
 
 import Contact from "../components/Contact";
 import Techstack from "../components/Techstack";
-import "./main.css";
+// import "./main.css";
 import myself from '../asset/myself.jpeg';
 
 
