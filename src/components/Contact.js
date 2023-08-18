@@ -1,3 +1,4 @@
+
 import React from "react";
 
 
@@ -5,7 +6,7 @@ import LinkedinIcon from '../asset/icons8-linkedin.svg';
 import Ig from '../asset/icons8-instagram.svg';
 import Github from '../asset/icons8-github.svg';
 
-// import "./Contact.css";
+import "./Contact.css";
 const Contact = () => {
     return (
         <div className="contact-container">
@@ -20,17 +21,26 @@ const Contact = () => {
 
                 <button>Submit</button>
             </form>
-            <div className="smbtn-group">
-                <a href="https://www.linkedin.com/in/wai-yeung-mak">
-                    <img src={LinkedinIcon} alt="LinkedinIcon" />
-                </a>
-                <a href="https://www.instagram.com/_wixmakmak/?hl=en">
-                    <img src={Ig} alt="IgIcon" />
-                </a>
-                <a href="https://github.com/WixMak">
-                    <img src={Github} alt="LinkedinIcon"/>
-                </a>
+            <div className="contact-info">
+                <div>
+                    <h4>
+                        Email: makwaiyeung123@gmail.com
+                    </h4>
+
+                </div>
+                <div className="smbtn-group">
+                    <a href="https://www.linkedin.com/in/wai-yeung-mak">
+                        <img src={LinkedinIcon} alt="LinkedinIcon" />
+                    </a>
+                    <a href="https://www.instagram.com/_wixmakmak/?hl=en">
+                        <img src={Ig} alt="IgIcon" />
+                    </a>
+                    <a href="https://github.com/WixMak">
+                        <img src={Github} alt="LinkedinIcon"/>
+                    </a>
+                </div>
             </div>
+
 
         </div>
     )

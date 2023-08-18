@@ -5,7 +5,7 @@ import photo02 from "../asset/myphoto/DSC05067.JPG";
 import photo03 from "../asset/myphoto/DSC05083.JPG";
 import photo04 from "../asset/myphoto/DSC03197.JPG";
 
-// import "./Photoshow.css";
+import "./Photoshow.css";
 const Photoshow = () => {
     return (
         <div className="hobby">

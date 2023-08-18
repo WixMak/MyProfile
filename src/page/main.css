@@ -29,9 +29,42 @@
 .intro h3 {
     margin: 0;
     color: #00d4ff;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation:
+            typing 3.5s steps(40, end) infinite,
+            blink-caret .75s step-end infinite;
 }
+
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #6f6fb5 }
+}
+
 .intro p {
-     font-family: "YuKyokasho Yoko";
+    font-family: "YuKyokasho Yoko";
+    margin-bottom: 10px;
+}
+
+.intro a{
+    background-color: #00d4ff;
+    color: white;
+    border-radius: 10px;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    text-decoration: none;
+    font-size: 24px;
+    margin-block: 1rem;
+}
+
+.intro a:hover{
+    background-color: #6f6fb5;
+}
+
+.intro h5 {
+    margin: 0;
 }
 
 /*@keyframes avatar {*/
@@ -73,10 +106,18 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(111,111,181,1) 50%, rgba(0,212,255,1) 100%);
+        background: linear-gradient(to bottom,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../asset/myself.jpeg")  0 / cover;
         padding-bottom: 20px;
         text-align: center;
     }
+    .intro p{
+        text-align: left;
+    }
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 85% }
+    }
+
 
 }
 
@@ -90,10 +131,15 @@
         color: white;
         min-height: 30rem;
         width: 100%;
-        background: linear-gradient(to bottom,rgba(0, 0, 0, 0.5), rgba(117, 19, 93, 0.73)), url("../asset/myphoto/DSC04994.JPG");
+        background: linear-gradient(to bottom,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/myphoto/DSC04994.JPG");
         background-size: cover;
         background-attachment: fixed;
         flex-wrap: wrap;
     }
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 72% }
+    }
+
 }
 

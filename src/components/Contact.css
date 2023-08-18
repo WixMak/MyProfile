@@ -16,6 +16,7 @@
 .contact-form {
     color: white;
     font-size: 24px;
+
 }
 
 .contact-form input{
@@ -68,7 +69,14 @@
     color: #020024;
 }
 
+.contact-info {
+    display: flex;
+    color: white;
+    align-items: center;
+
+
+}
+
 .smbtn-group img{
     margin:1rem
-
 }

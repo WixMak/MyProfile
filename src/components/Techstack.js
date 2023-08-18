@@ -15,7 +15,7 @@ import Redux from '../asset/tech_icon/redux.svg';
 import sql from '../asset/tech_icon/sql.svg';
 import MongoDB from '../asset/tech_icon/mongoDB.svg';
 import PostMan from '../asset/tech_icon/Postman.svg';
-// import "./Techstack.css";
+import "./Techstack.css";
 const stackList = [
     Html, Css, ReactIcon, Redux, Node, sql, MongoDB, Js, Python, Docker, Figma, Gitlab, Github, PostMan, Ps
 ]
@@ -24,7 +24,7 @@ const stackList = [
 const Techstack = () => {
     return (
         <div className="techstack-container">
-            <h1>WHAT SKILL DO I HAVE ?</h1>
+            <h1>WHAT SKILLS DO I HAVE ?</h1>
 
             <div className="techstack-icon">
                 {stackList.map(ele => {

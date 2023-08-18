@@ -1,7 +1,7 @@
 import React from "react";
 
 import Projectshow from "../components/Projectshow";
-// import './Experience.css';
+import './Experience.css';
 
 import Jpex from "../asset/projects/img.png";
 import Dm from "../asset/projects/dm.png";
