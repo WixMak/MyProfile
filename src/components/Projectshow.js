@@ -2,7 +2,7 @@ import React from 'react';
 
 import Rightarrow from "../asset/rightarrow.svg";
 import CodeIcon from "../asset/code-circle.svg";
-import "./Projectshow.css";
+// import "./Projectshow.css";
 
 const Projectshow = props => {
     const getStyle = () => {
