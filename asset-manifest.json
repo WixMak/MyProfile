@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myprofile/static/css/main.024ce849.css",
-    "main.js": "/myprofile/static/js/main.6999d728.js",
+    "main.css": "/myprofile/static/css/main.6675e2e9.css",
+    "main.js": "/myprofile/static/js/main.7a270bad.js",
     "static/media/DSC05083.JPG": "/myprofile/static/media/DSC05083.8e88acfd12baacb9a436.JPG",
     "static/media/DSC04994.JPG": "/myprofile/static/media/DSC04994.866c7dd5cffb4da9b502.JPG",
     "static/media/DSC05067.JPG": "/myprofile/static/media/DSC05067.1f0dd1f2d7642d85890f.JPG",
@@ -10,6 +10,7 @@
     "static/media/DSC03197.JPG": "/myprofile/static/media/DSC03197.838fb0863fa5343b4771.JPG",
     "static/media/dm.png": "/myprofile/static/media/dm.502862adeb070338aac0.png",
     "static/media/myself.jpeg": "/myprofile/static/media/myself.6d3c1cbc10488d705d4c.jpeg",
+    "static/media/Wix_Resume.pdf": "/myprofile/static/media/Wix_Resume.575beec23a53fabeb77c.pdf",
     "static/media/gamema.png": "/myprofile/static/media/gamema.0a84d174aa195483e421.png",
     "static/media/Postman.svg": "/myprofile/static/media/Postman.131b6093337aed31aa5d8445c86b7eb5.svg",
     "static/media/sql.svg": "/myprofile/static/media/sql.e7eb835577878ce20bde9d4f2281b7b9.svg",
@@ -33,11 +34,11 @@
     "static/media/icons8-linkedin.svg": "/myprofile/static/media/icons8-linkedin.e9b8df20d092b20af087c400014ff4c8.svg",
     "static/media/code-circle.svg": "/myprofile/static/media/code-circle.18814bf1b3d2c345137fb3106de810e1.svg",
     "static/media/more.svg": "/myprofile/static/media/more.e83893e60001f00453a666156e46a1b4.svg",
-    "main.024ce849.css.map": "/myprofile/static/css/main.024ce849.css.map",
-    "main.6999d728.js.map": "/myprofile/static/js/main.6999d728.js.map"
+    "main.6675e2e9.css.map": "/myprofile/static/css/main.6675e2e9.css.map",
+    "main.7a270bad.js.map": "/myprofile/static/js/main.7a270bad.js.map"
   },
   "entrypoints": [
-    "static/css/main.024ce849.css",
-    "static/js/main.6999d728.js"
+    "static/css/main.6675e2e9.css",
+    "static/js/main.7a270bad.js"
   ]
 }
