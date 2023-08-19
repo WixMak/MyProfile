@@ -17,6 +17,10 @@
     justify-content: center;
 }
 
+.techstack-icon img:hover{
+    transform: scale(1.4);
+}
+
 .techstack-icon img{
     margin: 20px;
 }

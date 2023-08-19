@@ -1,5 +1,5 @@
-
-import React from "react";
+import React, {useRef, useState} from "react";
+import emailjs from 'emailjs-com';
 
 
 import LinkedinIcon from '../asset/icons8-linkedin.svg';
@@ -8,18 +8,37 @@ import Github from '../asset/icons8-github.svg';
 
 import "./Contact.css";
 const Contact = () => {
+    const [emailsent, setEmailsent] = useState(false)
+    const form = useRef();
+
+    const sendEmailHandler = (event) => {
+        event.preventDefault()
+
+        emailjs.sendForm('service_us3bpwb', 'template_esvd78y', form.current, '7ne5ZAIjxS7KwzKSi')
+            .then(() => {
+                setEmailsent(true);
+                alert("Thanks for your message!, I will reply you ASAP !");
+            }, () => {
+                alert("Something goes wrong ! Please try again");
+            });
+
+
+    }
     return (
-        <div className="contact-container">
+        <div className="contact-container" onSubmit={sendEmailHandler}>
             <h1>Let Us Keep In Touch!</h1>
-            <form className="contact-form">
+            <form ref={form} onSubmit={sendEmailHandler} className="contact-form">
 
-                <input type="text" id="email" name="Name" placeholder="Name"/><br/>
+                <input type="text" id="name" name="name" placeholder="Name" /><br/>
 
-                <input type="text" id="email" name="Email" placeholder="Email" required/><br/>
+                <input type="email" id="email" name="email" placeholder="Email" required/><br/>
 
-                <textarea id="email" name="Message" placeholder="Message" required/><br/>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required/><br/>
 
-                <button>Submit</button>
+                <textarea id="email" name="message" placeholder="Message" required/><br/>
+
+
+                <button disabled={emailsent} type="submit">Submit</button>
             </form>
             <div className="contact-info">
                 <div>

@@ -5,7 +5,6 @@ import Techstack from "../components/Techstack";
 import "./main.css";
 import myself from '../asset/myself.jpeg';
 import resume from '../asset/Wix_Resume.pdf';
-import rightarrow from '../asset/rightarrow.svg';
 
 
 
@@ -35,7 +34,7 @@ const Main = () => {
                         <h3><strong>Web & APP Developer</strong></h3>
                         Currently located in Melbourne Australia
                     </p>
-                    <a href={resume} download="Wix_Resume.pdf" target="_blank">
+                    <a href={resume} download="Wix_Resume.pdf" target="_blank" rel="noreferrer">
                         <strong>My Resume</strong>
                     </a>
                 </div>
