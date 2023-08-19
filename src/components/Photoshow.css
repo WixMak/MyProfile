@@ -1,42 +1,39 @@
-@media only screen and (min-width: 375px) {
+.photo-showcase {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hobby {
+    color: #00d4ff;
+    text-align: center;
+}
+
+@media only screen and (max-width: 390px) {
 
     .hobby {
-        color: white;
+        color: #00d4ff;
         display: grid;
         justify-items: center;
         text-align: center;
-        padding: 2rem;
+    }
+    .photo-showcase {
+        display: grid;
+        justify-items: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .hobby {
+        color: #00d4ff;
+        display: grid;
+        justify-items: center;
+        padding-inline: 1rem;
+
     }
 
     .hobby h1{
-        font-size: 36px;
-        margin-bottom: 2rem;
-        color: #00d4ff;
-
+        font-size: 24px;
     }
-
-    .photo-showcase {
-        display: grid;
-        justify-items: center;
-    }
-}
-
-@media only screen and (min-width: 576px) {
-
-
-    .hobby {
-        color: white;
-        display: grid;
-        justify-items: center;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-
-    .photo-showcase {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
 }

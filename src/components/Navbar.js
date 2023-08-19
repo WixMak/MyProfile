@@ -8,6 +8,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
     const [showButton, setShowButton] = useState()
+    const [showDrawer,setShowdrawer] = useState(false)
     useEffect(() => {
         showButtonhanlder()
         window.addEventListener("resize", showButtonhanlder)
@@ -16,14 +17,12 @@ const Navbar = () => {
     },[])
 
     const showButtonhanlder = () => {
-        console.log()
         if (window.innerWidth > 576){
             setShowButton(true)
         } else {
             setShowButton(false)
         }
     }
-
 
     return (
         <div className="navbar-container">
@@ -36,7 +35,16 @@ const Navbar = () => {
                     <NavLink to="/exp">Projects</NavLink>
                     <NavLink to="/services">Services</NavLink>
                 </div> :
-                    <Morebtn style={{stroke:'white', width:'40px'}} onClick={() => console.log('clicked')}/>
+                    <Morebtn style={{stroke:'white', width:'40px'}} onClick={() => setShowdrawer(!showDrawer)}/>
+            }
+            {showDrawer &&
+                <div className="navbar-drawer">
+                    <div className="navbar-btn">
+                        <NavLink to="/About">About me</NavLink>
+                        <NavLink to="/exp">Projects</NavLink>
+                        <NavLink to="/services">Services</NavLink>
+                    </div>
+                </div>
             }
 
         </div>

@@ -1,4 +1,3 @@
-
 .about-intro {
     background-color: #444273;
     padding: 5rem;
@@ -16,4 +15,32 @@
 .about-intro p {
     color: white;
     font-size: 24px;
+}
+
+@media only screen and (max-width: 390px) {
+    .about-intro {
+        background-color: #444273;
+        padding-block: 1rem;
+        padding-inline: 2.5rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 576px) {
+    .about-intro {
+        padding-block: 1rem;
+        padding-inline: 2.5rem;
+    }
+
+    .about-intro h1 {
+        color: #00d4ff;
+        font-size: 24px;
+    }
+
+    .about-intro p {
+        color: white;
+        font-size: 12px;
+    }
+
 }

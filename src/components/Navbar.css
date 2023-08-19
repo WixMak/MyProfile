@@ -29,3 +29,41 @@
     color: #6f6fb5;
     box-shadow: inset 0 -2px 0 0 #6f6fb5;
 }
+
+.navbar-drawer {
+    position: fixed;
+    background-color: #282c34;
+    top: 9%;
+    right: -40%;
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+    animation-name: sideDrawer;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+
+}
+
+@keyframes sideDrawer {
+    from {
+        right: -100%;
+    }
+    to {
+        right: -40%;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar-container .navbar-btn {
+        font-size: 30px;
+        display: grid;
+        justify-content: left;
+    }
+
+    .navbar-container .navbar-btn a {
+        margin-block: 10px;
+        font-size: 24px;
+    }
+
+}

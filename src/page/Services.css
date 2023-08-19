@@ -1,5 +1,5 @@
 .services-container {
-    padding-inline: 5rem;
+    padding-inline: 1rem;
     padding-block: 2rem;
 
 }
@@ -51,7 +51,7 @@
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 390px) {
     .services-container {
         padding-inline: 1rem;
         padding-block: 2rem;
@@ -74,12 +74,11 @@
     .services-container ul{
         list-style-type: none;
         font-size: 12px;
+        padding: 0;
     }
 
     .services-guarantee li{
-
         max-width: 100%;
-
     }
 }
 

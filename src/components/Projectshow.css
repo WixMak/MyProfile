@@ -61,12 +61,20 @@
     padding-right: 20px;
 }
 
-
-
 @media only screen and (max-width: 768px) {
+    .project-showcase-container h1{
+        font-size: 24px;
+    }
+
+    .project-showcase-container p{
+        font-size: 12px;
+    }
+
     .project-showcase-right,
     .project-showcase-left {
         flex-wrap: wrap;
+        padding-block: 1rem;
+        padding-inline: 2.5rem;
     }
 
     .project-showcase-img{
@@ -74,8 +82,9 @@
         max-width: 100%;
     }
 
-    .project-showcase-desc{
-        padding-left: 0;
+    .project-showcase-left .project-showcase-desc,
+    .project-showcase-right .project-showcase-desc{
+        padding: 0;
     }
 }
 
