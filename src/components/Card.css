@@ -27,7 +27,7 @@
     font-size: 12px;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 430px) {
     .card-layout {
         width: 100%;
         padding-bottom: 1%;

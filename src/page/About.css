@@ -17,7 +17,7 @@
     font-size: 24px;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 430px) {
     .about-intro {
         background-color: #444273;
         padding-block: 1rem;
