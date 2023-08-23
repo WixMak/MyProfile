@@ -98,7 +98,7 @@
     bottom: 50%;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 420px) {
     .intro {
         font-size: 24px;
         color: white;
@@ -120,11 +120,11 @@
         from { width: 0 }
         to { width: 85% }
     }
-
-
 }
 
-@media only screen and (min-width: 576px) {
+
+
+@media only screen and (min-width: 421px) {
     .intro {
         display: flex;
         justify-content: center;
