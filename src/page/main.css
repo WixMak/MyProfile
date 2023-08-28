@@ -33,7 +33,7 @@
     border-right: .15em solid orange;
     white-space: nowrap;
     animation:
-            typing 3.5s steps(40, end) infinite,
+            typing 3.5s steps(40, end) infinite alternate-reverse,
             blink-caret .75s step-end infinite;
 }
 
@@ -45,7 +45,7 @@
 
 .intro p {
     font-family: "YuKyokasho Yoko";
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .intro a{
@@ -56,7 +56,6 @@
     padding-block: 0.5rem;
     text-decoration: none;
     font-size: 24px;
-    margin-block: 1rem;
 }
 
 .intro a:hover{
@@ -98,19 +97,17 @@
     bottom: 50%;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 430px) {
     .intro {
-        font-size: 24px;
+        font-size: 20px;
         color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        place-items: center;
         background: linear-gradient(to bottom,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../asset/myself.jpeg") no-repeat 0 -6rem;
         background-size: contain;
         background-attachment: fixed;
-        padding-bottom: 20px;
         text-align: center;
+        min-height: 22rem;
 
     }
     .intro p{
@@ -118,13 +115,13 @@
     }
     @keyframes typing {
         from { width: 0 }
-        to { width: 85% }
+        to { width: 18ch }
     }
 }
 
 
 
-@media only screen and (min-width: 421px) {
+@media only screen and (min-width: 431px) {
     .intro {
         display: flex;
         justify-content: center;
@@ -141,7 +138,7 @@
     }
     @keyframes typing {
         from { width: 0 }
-        to { width: 72% }
+        to { width: 18ch }
     }
 
 }

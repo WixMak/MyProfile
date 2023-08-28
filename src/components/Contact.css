@@ -74,7 +74,10 @@
     color: white;
     align-items: center;
 }
-
+.smbtn-group {
+    display: flex;
+    justify-content: center;
+}
 .smbtn-group img{
     margin:1rem
 }

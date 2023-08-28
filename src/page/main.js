@@ -35,9 +35,10 @@ const Main = () => {
                         Currently located in Melbourne Australia
                     </p>
                     <a href={resume} download="Wix_Resume.pdf" target="_blank" rel="noreferrer">
-                        <strong>My Resume</strong>
+                        My Resume
                     </a>
                 </div>
+
                 {
                     showAvatar &&
                     <div className="avatar-border">
@@ -46,7 +47,9 @@ const Main = () => {
                         </div>
                     </div>
                 }
+
             </div>
+
             <Techstack />
             <Contact/>
 
