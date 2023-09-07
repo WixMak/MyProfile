@@ -4,7 +4,7 @@ import Contact from "../components/Contact";
 import Techstack from "../components/Techstack";
 import "./main.css";
 import myself from '../asset/myself.jpeg';
-import resume from '../asset/Wix_Resume.pdf';
+import resume from '../asset/Wix_Developer_Resume.pdf';
 
 
 
