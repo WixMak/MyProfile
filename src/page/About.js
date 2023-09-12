@@ -9,11 +9,9 @@ const About = () => {
             <div className="about-intro">
                 <h1>I AM HERE TO HELP YOUR NEXT PROJECT !</h1>
                 <p>
-                    Recently I graduated from Deakin University with a Bachelor of computer science,
-                    I possess a deep passion for web/mobile development,
-                    with experience in front-end development using React.js and React Native for both websites and mobile applications.
-                    I have a basic understanding of Figma and MySQL. I am actively learning about Node.js and database servers such as MongoDB in my personal time.
-                    Joining your esteemed company would provide an excellent opportunity for me to demonstrate my abilities and contribute to its success.
+                    I am a computer science graduate from Deakin University with excellent time management, teamwork, and communication skills,
+                    My expertise in front-end development using HTML, CSS, JavaScript, React.js, and React Native allows me to create engaging and visually appealing user interfaces.
+
                 </p>
             </div>
 

@@ -17,13 +17,28 @@
     justify-content: center;
 }
 
-.techstack-icon img:hover{
-    transform: scale(1.4);
-}
-
 .techstack-icon img{
     margin: 20px;
 }
+
+.techstack-name{
+    display: grid;
+    place-items: center;
+}
+
+.techstack-name span{
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+.techstack-name:hover img{
+    transform: scale(1.4);
+}
+
+.techstack-name:hover span{
+    visibility: visible;
+}
+
 
 @media only screen and (max-width: 430px) {
     .techstack-container {
@@ -36,10 +51,21 @@
 
     .techstack-icon img{
         width: 1.9rem;
+        margin-block: 5px;
     }
 
     .techstack-container h1{
         font-size: 24px;
     }
+
+    .techstack-name {
+        width: 20%;
+    }
+
+    .techstack-name span{
+        visibility: hidden;
+        font-size: 10px;
+    }
+
 
 }

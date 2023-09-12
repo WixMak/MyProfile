@@ -17,7 +17,21 @@ import MongoDB from '../asset/tech_icon/mongoDB.svg';
 import PostMan from '../asset/tech_icon/Postman.svg';
 import "./Techstack.css";
 const stackList = [
-    Html, Css, ReactIcon, Redux, Node, sql, MongoDB, Js, Python, Docker, Figma, Gitlab, Github, PostMan, Ps
+    {img:Html, name:"HTML"},
+    {img:Css, name:"CSS"},
+    {img:Js,  name:"JavaScript"},
+    {img:Python, name:"Python"},
+    {img:ReactIcon,  name:"React/React-Native"},
+    {img:Redux,  name:"Redux"},
+    {img:Node, name:"Node.js"},
+    {img:sql, name:"MySQL"},
+    {img:MongoDB, name:"MongoDB"},
+    {img:Gitlab,  name:"Gitlab"},
+    {img:Github,  name:"Github"},
+    {img:Docker, name:"Docker"},
+    {img:PostMan, name:"PostMan"},
+    {img:Figma, name:"Figma"},
+    {img:Ps, name:"Photoshop"},
 ]
 
 
@@ -29,9 +43,10 @@ const Techstack = () => {
             <div className="techstack-icon">
                 {stackList.map(ele => {
                     return(
-                        <>
-                            <img src={ele} alt={ele} />
-                        </>
+                        <div className="techstack-name">
+                            <img src={ele.img} alt={ele.name} />
+                            <span>{ele.name}</span>
+                        </div>
                     )
 
                 })}

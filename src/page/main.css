@@ -30,17 +30,22 @@
     margin: 0;
     color: #00d4ff;
     overflow: hidden;
-    border-right: .15em solid orange;
+    border-right: .15em solid #6f6fb5;
     white-space: nowrap;
+    width: 17ch;
     animation:
-            typing 3.5s steps(40, end) infinite alternate-reverse,
-            blink-caret .75s step-end infinite;
+            typing 2.5s steps(30, end) infinite alternate forwards,
+            blink-caret .5s step-end infinite;
 }
 
 
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #6f6fb5 }
+}
+
+@keyframes typing {
+    from { width: 0 }
 }
 
 .intro p {
@@ -113,10 +118,7 @@
     .intro p{
         text-align: left;
     }
-    @keyframes typing {
-        from { width: 0 }
-        to { width: 18ch }
-    }
+
 }
 
 
@@ -135,10 +137,6 @@
         background-size: cover;
         background-attachment: fixed;
         flex-wrap: wrap;
-    }
-    @keyframes typing {
-        from { width: 0 }
-        to { width: 18ch }
     }
 
 }
