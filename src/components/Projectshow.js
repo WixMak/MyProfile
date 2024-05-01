@@ -5,8 +5,9 @@ import CodeIcon from "../asset/code-circle.svg";
 import "./Projectshow.css";
 
 const Projectshow = props => {
+    const {id, name, description, tech, link, havCode, src} = props
     const getStyle = () => {
-        if (props.id % 2 === 0) {
+        if (id % 2 === 0) {
             return "left"
         } else {
             return "right"
@@ -16,23 +17,28 @@ const Projectshow = props => {
         <div className="project-showcase-container">
             <div className={`project-showcase-${getStyle()}`}>
                 <div className="project-showcase-desc">
-                    <h1>{props.name}</h1>
-                    <p>{props.description}</p>
-                    <h3>Tech: {props.tech}</h3>
+                    <h1>{name}</h1>
+                    <p>{description}</p>
+                    <h3>Tech: {tech}</h3>
                     <div className="btn-group">
-                        <a href={`${props.link}`} className="live-btn">
-                            <h2>Live</h2>
-                            <img src={Rightarrow} alt="rightarrow"/>
+                        <a href={`${link}`} className="live-btn">
+                            {link ?
+                                <>
+                                    <h2>Go Live</h2>
+                                    <img src={Rightarrow} alt="rightarrow"/>
+                                </> : <span>Sorry cannot provide the link at the moment</span>
+                            }
+
                         </a>
-                        {props.havCode ?
-                            <a href={`${props.havCode}`} className="live-btn">
+                        {havCode ?
+                            <a href={`${havCode}`} className="live-btn">
                                 <h2>Code</h2>
                                 <img src={CodeIcon} alt="rightarrow"/>
                             </a> : null
                         }
                     </div>
                 </div>
-                <img src={props.src} className="project-showcase-img" alt={props.name}/>
+                <img src={src} className="project-showcase-img" alt={name}/>
             </div>
         </div>
 

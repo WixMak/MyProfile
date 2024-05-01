@@ -10,12 +10,12 @@ import GameMA from "../asset/projects/gamema.png";
 const projectList = [
     {
         id:1,
-        name:"JPEX Crypto Platform",
-        description:"Jpex is a global digital asset trading platform which have numinous user trading crypto on it everyday. " +
+        name:"Crypto Asset Platform",
+        description:"This Crypto Asset Platform is a global digital asset trading platform which have numinous user trading crypto on it everyday. " +
             "I mainly focus on Web/App frontend development for this project and worked in a 12 persons team including backend team, frontend team and designer.",
         tech:"React, React-Native, Redux, Ant-design",
-        link:"https://jp-ex.io/en/home",
-        src:Jpex
+        // link:"https://jp-ex.io/en/home",
+        src:"https://assets.toptal.io/images?url=https%3A%2F%2Fbs-uploads.toptal.io%2Fblackfish-uploads%2Fcomponents%2Fblog_post_page%2Fcontent%2Fcover_image_file%2Fcover_image%2F1303387%2Fretina_500x200_Untitled-e7fde53f1e5631a8728cc9aefc1538e8.png"
     },
     {
         id:2,

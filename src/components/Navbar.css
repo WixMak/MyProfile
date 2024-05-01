@@ -1,17 +1,28 @@
 .navbar-container {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    z-index: 100;
+
+}
+
+.navbar-content {
     background-color: #282c34;
     padding-inline: 5%;
     height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .navbar-container .logo a {
     font-size: 1rem;
     color: white;
     text-decoration: none;
-
 }
 
 .navbar-container .navbar-btn {
@@ -19,13 +30,16 @@
     display: flex;
     justify-content: space-around;
 }
+
+
 .navbar-container .navbar-btn a {
     color: white;
     text-decoration: none;
     margin-left: 20px;
 }
 
-.navbar-container .navbar-btn a:hover {
+.navbar-container .navbar-btn a:hover,
+.navbar-container .navbar-btn .active{
     color: #6f6fb5;
     box-shadow: inset 0 -2px 0 0 #6f6fb5;
 }
